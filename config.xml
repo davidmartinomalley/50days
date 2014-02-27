@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.hello-world"
         version   = "3.1.0">
-    <name>My First PhoneGap App</name>
+    <name>50 Days</name>
 
     <description>
         Simply displaying GitHub results.

@@ -5,15 +5,32 @@
         <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
         <script type="text/javascript" src="index.js"></script>
     </head>
-<body>
-
+<body bgcolor="#000000">
+<script>
+    
+    
+    $(document).ready(function() {
+        var monthNames = [ "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December" ];
+    var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    
+        var myDate = new Date();
+        $('#dateDiv').html("Today is " + dayNames[myDate.getDay()] + ", " + monthNames[newDate.getMonth()] + " " + myDate.getDate());
+    })
+    
+      
+</script>
     
     <div class='header'><h1>50 Days of Practice</h1></div>
-    <br/>
+    <div id="dateDiv"></div>
+    <div>
         <img src="checkMarkOff.png" id="mainActionImage" onclick="toggleMainImage()">
         <div id="main" onclick="toggleMainImage()" onloadstart="loadInitialImage()"></div>
+        
     </div>
-
+    <div id="feedback">wdwewer</div>
+    
+    
 
 </body>
 </html>
